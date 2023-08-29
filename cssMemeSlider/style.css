@@ -67,6 +67,42 @@ footer {
     height: 100%;
     margin: 0 auto;
 }
+.controls-container {
+    display: flex;
+    justify-content: flex-end;
+    order: 2;
+}
+.controls-container__label {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    user-select: none;
+}
+.controls-container__circle {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #71ABFE;
+    border: 0.2rem solid #71ABFE;
+    border-radius: 50%;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.contols-container__input {
+    display: none;
+}
+.controls-container__label:hover > .controls-container__circle {
+    background-color: #FEFEFE;
+    border: 0.2rem solid #FEFEFE;
+}
+.controls-container__label:active > .controls-container__circle {
+    background-color: #BCBDBE;
+    border: 0.2rem solid #BCBDBE;
+}
+.controls-container__label:has(.contols-container__input:checked) > .controls-container__circle {
+    background-color: transparent;
+}
 
 
 .footer-text {
