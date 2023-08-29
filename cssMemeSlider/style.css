@@ -9,6 +9,7 @@
     font-style: normal;
     font-weight: 400;
     color: #FEFEFE;
+    text-shadow: 0 0.1rem 1rem black;
     -webkit-tap-highlight-color: transparent;
 }
 *:focus-visible {
@@ -24,7 +25,7 @@ a:hover {
     color: #71ABFE;
 }
 body {
-    background-color: #54074b;
+    background-color: #ffae00;
 }
 
 main {
@@ -35,6 +36,7 @@ h1 {
     text-align: center;
     font-weight: 700;
     letter-spacing: 0.2rem;
+    font-size: 4rem;
     line-height: 5.25rem;
 }
 footer {
@@ -89,7 +91,7 @@ footer {
 }
 
 .slider-container {
-    margin: 1rem 8rem; /*0.5*/
+    margin: 1rem 8rem;
     overflow: hidden;
 }
 .slider-container__carousel {
@@ -155,4 +157,56 @@ footer {
 }
 .footer-text__center {
     margin-left: 9rem;
+}
+.footer-text__rs-logo {
+    display: none;
+    background: url('./assets/rs_school_js.svg') no-repeat;
+}
+.footer-text__gh-logo {
+    display: none;
+    background: url('./assets/github.svg') no-repeat;
+}
+
+/* 1280 - 0.5, 840 - RSS, 768 - mobile, 680 - check */
+@media (max-width: 1280px) {
+    .slider-container {
+        margin: 1rem 0.5rem;
+    }
+}
+@media (max-width: 910px) {
+    .footer-text__rs-span {
+        display: none;
+    }
+    .footer-text__rs-logo {
+        display: block;
+        min-height: 4rem;
+        min-width: 6rem;
+    }
+}
+@media (max-width: 768px) {
+    .controls-container {
+        align-self: center;
+        margin: 1rem;
+        order: 1;
+    }
+    .caption-container {
+        max-width: 100%;
+        order: 2;
+    }
+    .footer-text__center {
+        margin-left: 25%;
+    }
+}
+@media (max-width: 680px) {
+    .footer-text__gh-span {
+        display: none;
+    }
+    .footer-text__gh-logo {
+        display: block;
+        min-height: 2rem;
+        min-width: 2rem;
+    }
+    .footer-text__center {
+        margin-left: 0;
+    }
 }
