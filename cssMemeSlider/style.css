@@ -16,6 +16,15 @@
     outline: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 95%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #ffae00;
+}
 a {
     text-decoration: none;
     cursor: pointer;
@@ -24,10 +33,6 @@ a {
 a:hover {
     color: #71ABFE;
 }
-body {
-    background-color: #ffae00;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -45,12 +50,6 @@ footer {
     border-top: 0.2rem solid #FEFEFE;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 95%;
-    margin: 0 auto;
-}
 .controls-container {
     display: flex;
     justify-content: flex-end;
@@ -198,6 +197,9 @@ footer {
     }
 }
 @media (max-width: 680px) {
+    h1 {
+        font-size: 3rem;
+    }
     .footer-text__gh-span {
         display: none;
     }
