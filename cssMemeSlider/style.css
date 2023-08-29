@@ -92,6 +92,8 @@ footer {
 .slider-container {
     margin: 1rem 8rem;
     overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem #000000;
 }
 .slider-container__carousel {
     display: flex;
