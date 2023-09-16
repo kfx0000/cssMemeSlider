@@ -169,3 +169,8 @@ main {
         order: 2;
     }
 }
+@media (max-width: 600px) {
+    .caption-container__text {
+        font-size: xx-small;
+    }
+}
